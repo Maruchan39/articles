@@ -7,7 +7,7 @@
 
 # API key
 
-.apiKey
+*.apiKey.js
 
 # testing
 /coverage
