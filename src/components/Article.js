@@ -1,12 +1,16 @@
-import React from 'react'
+import React from "react";
 
-const Article = ({title, content, image}) => {
-    return (
-        <article>
-            <h2>{title}</h2>
-            <p>{content}</p>
-        </article>
-    )
-}
+const Article = ({ title, description, publishedAt, image }) => {
+  return (
+    <article id="article">
+      <h2 id="article-title">{title}</h2>
+      <div id="image-container">
+        <img src={image} alt="article-image" id="image"/>
+      </div>
+      <p>Published at: {publishedAt.substring(0, 10)}</p>
+      <p id="article-description">{description}</p>
+    </article>
+  );
+};
 
-export default Article
+export default Article;

@@ -6,14 +6,14 @@ export const ArticlesList = () => {
   const { articles } = useGlobalContext();
 
   return (
-    <section>
+    <>
       <h2>Articles</h2>
-      <div>
+      <div id="articles-list">
         {articles.map((article) => {
           return <Article {...article} />;
         })}
       </div>
-    </section>
+    </>
   );
 };
 

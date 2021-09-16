@@ -1,0 +1,31 @@
+#articles-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+#article {
+  padding: 10px;
+}
+
+#image-container {
+/* height: 20%;
+ background-color: chartreuse; */
+}
+
+#image {
+  max-width: 100%;
+}
+
+#article-title{
+}
+
+#article-description {
+  
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}

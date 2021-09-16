@@ -15,8 +15,8 @@ const AppProvider = ({ children }) => {
       const data = await response.json();
       console.log(data);
       const newArticles = data.articles.map((article) => {
-        const { title, content, image } = article;
-        return { title, content, image };
+        const { title, image, publishedAt, description } = article;
+        return { title, image, publishedAt, description };
       });
       setArticles(newArticles);
     } catch (error) {
