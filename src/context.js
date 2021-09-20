@@ -4,7 +4,7 @@ import apiKey from "./apiKey";
 const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
-  const [query, setQuery] = useState("Vilnius");
+  const [query, setQuery] = useState("Supra");
   const [articles, setArticles] = useState([]);
 
   const url = `https://gnews.io/api/v4/search?q=${query}&lang=en&max=9&token=${apiKey}`;

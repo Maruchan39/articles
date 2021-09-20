@@ -16,7 +16,7 @@ const SearchForm = () => {
   };
 
   return (
-    <section>
+    <section id="search-form">
       {queryValidity.test(query) || (
         <p>Please only use alphanumericals or whitespace</p>
       )}

@@ -3,14 +3,21 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   align-items: stretch;
+  grid-gap: 4px;
+  padding-right: 1%;
+}
+
+h2 {
+  text-align: center;
 }
 
 #article {
   padding: 10px;
+  border: 2px solid lightgrey;
 }
 
 #image-container {
-/* height: 20%;
+  /* height: 20%;
  background-color: chartreuse; */
 }
 
@@ -18,14 +25,40 @@
   max-width: 100%;
 }
 
-#article-title{
+#home-icon {
+  font-size: large;
+}
+
+#article-title {
 }
 
 #article-description {
-  
 }
 
-html, body {
+#search-form {
+  width: 100%;
+  display: inline-flex;
+  /* justify-content: flex-end; */
+  align-items: stretch;
+}
+
+#search-form > form {
+width: 100%;
+}
+
+#search-form > form > label {
+margin-right: 10px;  
+width: 25%;
+}
+
+#search-form > form > input {
+width: 75%;
+}
+
+html,
+body {
   height: 100%;
   width: 100%;
+  font-family: "Roboto", sans-serif;
 }
+
