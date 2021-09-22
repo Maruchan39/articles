@@ -9,8 +9,8 @@ export const ArticlesList = () => {
     <>
       <h2>Articles</h2>
       <div id="articles-list">
-        {articles.map((article) => {
-          return <Article {...article} />;
+        {articles.map((article, id) => {
+          return <Article key={id} {...article} />;
         })}
       </div>
     </>

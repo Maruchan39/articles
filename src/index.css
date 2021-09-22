@@ -15,6 +15,13 @@ h2 {
   border: 2px solid lightgrey;
   display: flex;
   flex-direction: column;
+  transition: background 0.6s ease-in-out;
+}
+
+.article:hover {
+  background-color: #E5E8E8;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 #image-container {
